@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    background-color: #DDD0CB;
+    overflow-x: hidden;
+}
+a{
+    background-color: #DDD0CB;
+    list-style-type: none;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+a:hover{
+    background-color: rgba(0,212,212,.75);
+    border-radius: 0px;
+    width: 100px;
+    height: 25px;
+    margin-left: 15%;
+}
+@media screen and (min-width:100px)and (max-width:800px) {
+    
+}
+@media screen and (min-width:801px) and (max-width:1759px) {
+    
+}
+@media (max-width:1760px) {
+    header{
+        background-color:aqua;
+        background-image: linear-gradient(to right, rgb(221, 208, 203), #ddd0cb, rgba(0, 212, 212, .75));
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        list-style-type: none;
+    }
+    .hero{
+        background-image:url(./images/streetsign.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        width: 100%;
+        height: 50vh;
+    }
+    .hero h1 {
+        background-color: rgba(255, 255, 255, .75);
+        font-size: 400%;
+    }
+    .hero p{
+        background-color: rgba(255, 255, 255, .75);
+        font-size: 400%;
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 40%;
+    }
+    .box h3{
+        background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
+        width: 25%;
+    }
+    .box .newarrivals{
+        background-image: url(./images/mens\ acess.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 5%;
+        border: 5px solid black;
+    }
+    .box .favorites{
+        background-image: url(./images/overshirts.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 5%;
+        border: 5px solid black;
+    }
+    .box .women{
+        background-image: url(./images/romper.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 5%;
+        border: 5px solid black;
+    }
+    .box .limitededition{
+        background-image: url(./images/sweater.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 5%;
+        border: 5px solid black;
+    }
+    .box .mens{
+        background-image: url(./images/jacket.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 5%;
+        border: 5px solid black;
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 40%;
+    }
+    .testimonials h3{
+        background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
+        font-size: 400%;
+        padding-bottom: 121%;
+        /* width: 25%; */
+    }
+    .testimonials p{
+        background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
+        font-size: 400%;
+        
+    }
+    .testimonials .test1{
+        background-image: url(./images/baglady.jpg);
+        background-size: cover;
+        height: 600px;
+        width: 400px;
+        margin: 1%;
+        border: 5px solid black;
+    }
+    .testimonials .test2{
+        background-image: url(./images/russiastyle.jpg);
+        background-size: cover;
+        height: 600px;
+        width: 400px;
+        margin: 1%;
+        border: 5px solid black;
+    }
+    .testimonials .test3{
+        background-image: url(./images/lastyles.jpg);
+        background-size: cover;
+        height: 600px;
+        width: 400px;
+        margin: 1%;
+        border: 5px solid black;
+
+    }
+    footer{
+        
+        font-size: smaller;
+        background-image: linear-gradient(to right, #ddd0cb, rgba(0,212,212,.75), #ddd0cb, rgba(0, 212, 212, .75));
+        height: 20vh;
+    }
+}
