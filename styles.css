@@ -7,17 +7,13 @@ html{
     overflow-x: hidden;
 }
 a{
-    background-color: #DDD0CB;
     list-style-type: none;
     text-decoration: none;
-    border-radius: 20px;
     font-size: 20px;
 }
 a:hover{
-    background-color: rgba(0,212,212,.75);
+    background-color: rgba(0,212,212, .35);
     border-radius: 0px;
-    width: 100px;
-    height: 25px;
     margin-left: 15%;
 }
 @media screen and (min-width:100px)and (max-width:800px) {
@@ -31,8 +27,14 @@ a:hover{
         background-color:aqua;
         background-image: linear-gradient(to right, rgb(221, 208, 203), #ddd0cb, rgba(0, 212, 212, .75));
     }
+    h1{
+        text-align: center;
+        font-size: 500%;
+
+    }
     ul{
         display: flex;
+        justify-content: center;
         flex-direction: row;
         padding: 0%;
     }
@@ -53,70 +55,208 @@ a:hover{
     .hero h1 {
         background-color: rgba(255, 255, 255, .75);
         font-size: 400%;
+        padding-bottom: 10%;
     }
     .hero p{
         background-color: rgba(255, 255, 255, .75);
         font-size: 400%;
+        padding-bottom: 5.5%;
+        text-align: center;
+    }
+    section{
+        margin: 2%;
     }
     .box{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
-        margin-left: 40%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 0%;
     }
     .box h3{
         background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
-        width: 25%;
+        width: 85%;
     }
-    .box .newarrivals{
+    img{
+        background-size: cover;
+        height: 350px;
+        width: 350px;
+        margin: 1%;
+        border: 5px solid black;
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .newarrivals{
+        margin: 1%;
+        position: relative;
+    }
+    .favorites{
+        margin: 1%;
+        position: relative;
+    }
+    .women{
+        margin: 1%;
+        position: relative;
+    }
+    .limitededition{
+        margin: 1%;
+        position: relative;
+    }
+    .mens{
+        margin: 1%;
+        position: relative;
+    }
+    .overlay {
+        position:absolute;
+        top: 0;
+        bottom: 1;
+        left: 0;
+        right: 1;
+        height: 360px;
+        width: 360px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0,212,212,.75); 
+      }
+      .newarrivals:hover .overlay {
+        opacity: .8;
+      }
+      .favorites:hover .overlay {
+        opacity: .8;
+      }
+      .women:hover .overlay {
+        opacity: .8;
+      }
+      .limitededition:hover .overlay {
+        opacity: .8;
+      }
+      .mens:hover .overlay {
+        opacity: .8;
+      }
+      .text {
+        color: black;
+        background-color: #DDD0CB;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    /* .box .newarrivals{
         background-image: url(./images/mens\ acess.jpg);
         background-size: cover;
-        height: 400px;
-        width: 400px;
+        height: 250px;
+        width: 250px;
         background-color: cadetblue;
         margin: 1%;
-        padding: 5%;
+        padding: 2% 5%;
         border: 5px solid black;
     }
     .box .favorites{
         background-image: url(./images/overshirts.jpg);
         background-size: cover;
-        height: 400px;
-        width: 400px;
+        height: 250px;
+        width: 250px;
         background-color: cadetblue;
         margin: 1%;
-        padding: 5%;
+        padding: 2% 5%;
         border: 5px solid black;
     }
     .box .women{
         background-image: url(./images/romper.jpg);
         background-size: cover;
-        height: 400px;
-        width: 400px;
+        height: 250px;
+        width: 250px;
         background-color: cadetblue;
         margin: 1%;
-        padding: 5%;
+        padding: 2% 5%;
         border: 5px solid black;
     }
     .box .limitededition{
         background-image: url(./images/sweater.jpg);
         background-size: cover;
-        height: 400px;
-        width: 400px;
+        height: 250px;
+        width: 250px;
         background-color: cadetblue;
         margin: 1%;
-        padding: 5%;
+        padding: 2% 5%;
         border: 5px solid black;
     }
     .box .mens{
         background-image: url(./images/jacket.jpg);
         background-size: cover;
-        height: 400px;
-        width: 400px;
+        height: 250px;
+        width: 250px;
         background-color: cadetblue;
         margin: 1%;
-        padding: 5%;
+        padding: 2% 5%;
         border: 5px solid black;
+    } */
+    /* .newarrivals:hover{
+        background-image: url(./images/mens\ acess.jpg);
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 2% 5%;
+        border: 5px solid black;
+    }
+    .favorites:hover{
+        background-image: url(./images/overshirts.jpg);
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 2% 5%;
+        border: 5px solid black;
+    }
+    .women:hover{
+        background-image: url(./images/romper.jpg);
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 2% 5%;
+        border: 5px solid black;
+    }
+    .limitededition:hover{
+        background-image: url(./images/sweater.jpg);
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 2% 5%;
+        border: 5px solid black;
+    } 
+    .mens:hover{
+        background-image: url(./images/jacket.jpg);
+        background-size: cover;
+        height: 150px;
+        width: 150px;
+        background-color: cadetblue;
+        margin: 1%;
+        padding: 2% 5%;
+        border: 5px solid black;
+        background-image: rgba(0, 212, 212, .75);
+    }*/
+    .hero2{
+        height: 70vh;
+        border-bottom: 1px beige groove;
+        background-image: url(./images/heatherstyles.jpg);
+        background-size: contain;
+        background-position: 40%;
+        background-repeat: repeat-x;
     }
     .testimonials{
         display: flex;
