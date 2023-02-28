@@ -32,6 +32,7 @@ a:hover{
     }
     ul{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
         padding: 0%;
@@ -57,8 +58,9 @@ a:hover{
     }
     .hero p{
         background-color: rgba(255, 255, 255, .75);
-        font-size: 400%;
-        padding-bottom: 5.5%;
+        font-size: 200%;
+        /* padding-bottom: 21.5%; */
+        height: 100vh;
         text-align: center;
     }
     section{
@@ -69,8 +71,9 @@ a:hover{
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        /* margin-top: 10%;
+        margin-bottom: 10%; */
+        margin: 5% 5%;
         padding: 0%;
     }
     .box h3{
@@ -79,8 +82,11 @@ a:hover{
     }
     img{
         background-size: cover;
-        height: 350px;
-        width: 350px;
+        align-self: center;
+        /* height: 250px;
+        width: 250px; */
+        height: 75%;
+        width: 75%;
         margin: 1%;
         border: 5px solid black;
         opacity: 1;
@@ -114,8 +120,10 @@ a:hover{
         bottom: 1;
         left: 0;
         right: 1;
-        height: 360px;
-        width: 360px;
+        height: 75%;
+        width: 75%;
+        /* height: 360px;
+        width: 360px; */
         opacity: 0;
         transition: .5s ease;
         background-color: rgba(0,212,212,.75); 
@@ -178,24 +186,24 @@ a:hover{
         background-image: url(./images/baglady.jpg);
         background-size: cover;
         background-position: 80%;
-        height: 400px;
-        width: 400px;
+        height: 100%;
+        width: 80%;
         margin: 1%;
         border: 5px solid black;
     }
     .testimonials .test2{
         background-image: url(./images/russiastyle.jpg);
         background-size: cover;
-        height: 400px;
-        width: 400px;
+        height: 100%;
+        width: 80%;
         margin: 1%;
         border: 5px solid black;
     }
     .testimonials .test3{
         background-image: url(./images/lastyles.jpg);
         background-size: cover;
-        height: 400px;
-        width: 400px;
+        height: 100%;
+        width: 80%;
         margin: 1%;
         border: 5px solid black;
 
@@ -207,10 +215,7 @@ a:hover{
         height: 20vh;
     }
 }
-@media screen and (min-width:801px) and (max-width:1759px) {
-    
-}
-@media (inx-width:1760px) {
+@media screen and (min-width:801px) and (max-width:3840px) {
     header{
         background-color:aqua;
         background-image: linear-gradient(to right, rgb(221, 208, 203), #ddd0cb, rgba(0, 212, 212, .75));
@@ -219,6 +224,9 @@ a:hover{
         text-align: center;
         font-size: 500%;
 
+    }
+    a{
+        font-size: 400%;
     }
     ul{
         display: flex;
@@ -250,6 +258,7 @@ a:hover{
         font-size: 400%;
         padding-bottom: 5.5%;
         text-align: center;
+        height: 100vh;
     }
     section{
         margin: 2%;
@@ -269,8 +278,8 @@ a:hover{
     }
     img{
         background-size: cover;
-        height: 350px;
-        width: 350px;
+        height: 650px;
+        width: 650px;
         margin: 1%;
         border: 5px solid black;
         opacity: 1;
@@ -304,8 +313,8 @@ a:hover{
         bottom: 1;
         left: 0;
         right: 1;
-        height: 360px;
-        width: 360px;
+        height: 660px;
+        width: 660px;
         opacity: 0;
         transition: .5s ease;
         background-color: rgba(0,212,212,.75); 
@@ -328,7 +337,7 @@ a:hover{
       .text {
         color: black;
         background-color: #DDD0CB;
-        font-size: 20px;
+        font-size: 375%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -455,42 +464,43 @@ a:hover{
     .testimonials h3{
         background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
         font-size: 400%;
-        padding-bottom: 121%;
+        padding-bottom: 139%;
         /* width: 25%; */
     }
     .testimonials p{
         background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
-        font-size: 400%;
+        font-size: 800%;
+        padding: 10px;
         
     }
     .testimonials .test1{
         background-image: url(./images/baglady.jpg);
         background-size: cover;
-        height: 600px;
-        width: 400px;
+        height: 1200px;
+        width: 700px;
         margin: 1%;
         border: 5px solid black;
     }
     .testimonials .test2{
         background-image: url(./images/russiastyle.jpg);
         background-size: cover;
-        height: 600px;
-        width: 400px;
+        height: 1200px;
+        width: 700px;
         margin: 1%;
         border: 5px solid black;
     }
     .testimonials .test3{
         background-image: url(./images/lastyles.jpg);
         background-size: cover;
-        height: 600px;
-        width: 400px;
+        height: 1200px;
+        width: 700px;
         margin: 1%;
         border: 5px solid black;
 
     }
     footer{
         
-        font-size: smaller;
+        font-size: 250%;
         background-image: linear-gradient(to right, #ddd0cb, rgba(0,212,212,.75), #ddd0cb, rgba(0, 212, 212, .75));
         height: 20vh;
     }
