@@ -17,12 +17,200 @@ a:hover{
     margin-left: 15%;
 }
 @media screen and (min-width:100px)and (max-width:800px) {
-    
+    body{
+        overflow-x: hidden;
+    }
+    /* pasted from maxwidth */
+    header{
+        background-color:aqua;
+        background-image: linear-gradient(to right, rgb(221, 208, 203), #ddd0cb, rgba(0, 212, 212, .75));
+    }
+    h1{
+        text-align: center;
+        font-size: 400%;
+
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 0%;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        list-style-type: none;
+    }
+    .hero{
+        background-image:url(./images/streetsign.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        width: 100%;
+        height: 50vh;
+    }
+    .hero h1 {
+        background-color: rgba(255, 255, 255, .75);
+        font-size: 400%;
+        padding-bottom: 10%;
+    }
+    .hero p{
+        background-color: rgba(255, 255, 255, .75);
+        font-size: 400%;
+        padding-bottom: 5.5%;
+        text-align: center;
+    }
+    section{
+        margin: 2%;
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 0%;
+    }
+    .box h3{
+        background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
+        width: 85%;
+    }
+    img{
+        background-size: cover;
+        height: 350px;
+        width: 350px;
+        margin: 1%;
+        border: 5px solid black;
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .newarrivals{
+        margin: 1%;
+        position: relative;
+    }
+    .favorites{
+        margin: 1%;
+        position: relative;
+    }
+    .women{
+        margin: 1%;
+        position: relative;
+    }
+    .limitededition{
+        margin: 1%;
+        position: relative;
+    }
+    .mens{
+        margin: 1%;
+        position: relative;
+    }
+    .overlay {
+        position:absolute;
+        top: 0;
+        bottom: 1;
+        left: 0;
+        right: 1;
+        height: 360px;
+        width: 360px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0,212,212,.75); 
+      }
+      .newarrivals:hover .overlay {
+        opacity: .8;
+      }
+      .favorites:hover .overlay {
+        opacity: .8;
+      }
+      .women:hover .overlay {
+        opacity: .8;
+      }
+      .limitededition:hover .overlay {
+        opacity: .8;
+      }
+      .mens:hover .overlay {
+        opacity: .8;
+      }
+      .text {
+        color: black;
+        background-color: #DDD0CB;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    .hero2{
+        height: 70vh;
+        border-bottom: 1px beige groove;
+        background-image: url(./images/heatherstyles.jpg);
+        background-size: contain;
+        background-position: 40%;
+        background-repeat: no-repeat;
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 40%;
+    }
+    .testimonials h3{
+        background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
+        font-size: 400%;
+        padding-bottom: 69%;
+        /* width: 25%; */
+    }
+    .testimonials p{
+        background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
+        font-size: 400%;
+        
+    }
+    .testimonials .test1{
+        background-image: url(./images/baglady.jpg);
+        background-size: cover;
+        background-position: 80%;
+        height: 400px;
+        width: 400px;
+        margin: 1%;
+        border: 5px solid black;
+    }
+    .testimonials .test2{
+        background-image: url(./images/russiastyle.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        margin: 1%;
+        border: 5px solid black;
+    }
+    .testimonials .test3{
+        background-image: url(./images/lastyles.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        margin: 1%;
+        border: 5px solid black;
+
+    }
+    footer{
+        
+        font-size: smaller;
+        background-image: linear-gradient(to right, #ddd0cb, rgba(0,212,212,.75), #ddd0cb, rgba(0, 212, 212, .75));
+        height: 20vh;
+    }
 }
 @media screen and (min-width:801px) and (max-width:1759px) {
     
 }
-@media (max-width:1760px) {
+@media (inx-width:1760px) {
     header{
         background-color:aqua;
         background-image: linear-gradient(to right, rgb(221, 208, 203), #ddd0cb, rgba(0, 212, 212, .75));
