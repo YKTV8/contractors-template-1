@@ -60,20 +60,24 @@ a:hover{
         background-color: rgba(255, 255, 255, .75);
         font-size: 200%;
         /* padding-bottom: 21.5%; */
-        height: 100vh;
+        height: 32vh;
         text-align: center;
     }
     section{
-        margin: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     .box{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
+        margin: 0 auto;
         /* margin-top: 10%;
         margin-bottom: 10%; */
-        margin: 5% 5%;
+        /* margin: 5% 5%; */
         padding: 0%;
     }
     .box h3{
@@ -83,10 +87,10 @@ a:hover{
     img{
         background-size: cover;
         align-self: center;
-        /* height: 250px;
-        width: 250px; */
-        height: 75%;
-        width: 75%;
+        height: 250px;
+        width: 250px;
+        /* height: 75%;
+        width: 75%; */
         margin: 1%;
         border: 5px solid black;
         opacity: 1;
@@ -120,10 +124,10 @@ a:hover{
         bottom: 1;
         left: 0;
         right: 1;
-        height: 75%;
-        width: 75%;
-        /* height: 360px;
-        width: 360px; */
+        /* height: 75%;
+        width: 75%; */
+        height: 250px;
+        width: 250px;
         opacity: 0;
         transition: .5s ease;
         background-color: rgba(0,212,212,.75); 
@@ -183,7 +187,7 @@ a:hover{
         
     }
     .testimonials .test1{
-        background-image: url(./images/baglady.jpg);
+        background-image: url(./images/russiastyle.jpg);
         background-size: cover;
         background-position: 80%;
         height: 100%;
@@ -226,7 +230,7 @@ a:hover{
 
     }
     a{
-        font-size: 400%;
+        font-size: 150%;
     }
     ul{
         display: flex;
@@ -250,15 +254,15 @@ a:hover{
     }
     .hero h1 {
         background-color: rgba(255, 255, 255, .75);
-        font-size: 400%;
+        font-size: 325%;
         padding-bottom: 10%;
     }
     .hero p{
         background-color: rgba(255, 255, 255, .75);
-        font-size: 400%;
-        padding-bottom: 5.5%;
+        font-size: 300%;
+        /* padding-bottom: 5.5%; */
         text-align: center;
-        height: 100vh;
+        height: 23vh;
     }
     section{
         margin: 2%;
@@ -278,8 +282,8 @@ a:hover{
     }
     img{
         background-size: cover;
-        height: 650px;
-        width: 650px;
+        height: 350px;
+        width: 350px;
         margin: 1%;
         border: 5px solid black;
         opacity: 1;
@@ -313,8 +317,8 @@ a:hover{
         bottom: 1;
         left: 0;
         right: 1;
-        height: 660px;
-        width: 660px;
+        height: 350px;
+        width: 350px;
         opacity: 0;
         transition: .5s ease;
         background-color: rgba(0,212,212,.75); 
@@ -458,13 +462,14 @@ a:hover{
     .testimonials{
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: center;
         font-size: 40%;
     }
     .testimonials h3{
         background-image: linear-gradient(to right, rgb(221, 208, 203), rgb(221, 208, 203, .2));
         font-size: 400%;
-        padding-bottom: 139%;
+        padding-bottom: 79%;
         /* width: 25%; */
     }
     .testimonials p{
@@ -474,26 +479,26 @@ a:hover{
         
     }
     .testimonials .test1{
-        background-image: url(./images/baglady.jpg);
+        background-image: url(./images/russiastyle.jpg);
         background-size: cover;
-        height: 1200px;
-        width: 700px;
+        height: 700px;
+        width: 300px;
         margin: 1%;
         border: 5px solid black;
     }
     .testimonials .test2{
         background-image: url(./images/russiastyle.jpg);
         background-size: cover;
-        height: 1200px;
-        width: 700px;
+        height: 700px;
+        width: 300px;
         margin: 1%;
         border: 5px solid black;
     }
     .testimonials .test3{
         background-image: url(./images/lastyles.jpg);
         background-size: cover;
-        height: 1200px;
-        width: 700px;
+        height: 700px;
+        width: 300px;
         margin: 1%;
         border: 5px solid black;
 
@@ -502,6 +507,7 @@ a:hover{
         
         font-size: 250%;
         background-image: linear-gradient(to right, #ddd0cb, rgba(0,212,212,.75), #ddd0cb, rgba(0, 212, 212, .75));
-        height: 20vh;
+        height: 40vh;
+        width: 100vw;
     }
 }
